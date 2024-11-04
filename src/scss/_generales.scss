@@ -80,14 +80,16 @@
 		position: relative;
 	}
 	&__sombra {
-		box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.2);
-	}
-	&__promo {
-		transition: ease 0.3s all;
-		&:hover {
-			box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 4px 12px 8px rgba(0, 0, 0, 0.2);
+		&-hover {
+			transition: ease 0.3s all;
+
+			&:hover {
+				box-shadow: 0px 4px 12px 8px rgba(0, 0, 0, 0.2);
+			}
 		}
 	}
+
 	&__anterior,
 	&__siguiente {
 		position: absolute;
@@ -97,7 +99,6 @@
 		width: 3rem;
 		height: 3rem;
 		font-size: 2.5rem;
-
 		border: none;
 		top: 50%;
 		transform: translateY(-50%);
@@ -108,18 +109,18 @@
 		color: $primary;
 		opacity: 0.75;
 		border-radius: 50rem;
-		box-shadow: -5px 0px 20px -5px rgba(0, 0, 0, 0.3);
+		box-shadow: -5px 0px 20px -5px rgba(34, 34, 34, 0.302);
 		&:hover {
 			opacity: 1;
 		}
 	}
 	&__anterior {
-		left: -2rem;
+		left: -3rem;
 	}
 	&__siguiente {
-		right: -2rem;
+		right: -3rem;
 	}
-	&__item {
+	&__circle {
 		width: 16rem;
 		height: 16rem;
 		border: 6px solid $primary;

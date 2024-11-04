@@ -1,38 +1,29 @@
 window.addEventListener('load', () => {
-    new Glider(document.querySelector('.carousel__lista'), {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        rewind: true,
-        arrows: {
-            prev: '.notice-prev',
-            next: '.notice-next',
-        },
-    });
-    new Glider(document.querySelector('.carousel__info'), {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        rewind: true,
-        arrows: {
-            prev: '.info-prev',
-            next: '.info-next',
-        },
-    });
-    new Glider(document.querySelector('.carousel__gallery'), {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        rewind: true,
-        arrows: {
-            prev: '.gallery-prev',
-            next: '.gallery-next',
-        },
-    });
-    new Glider(document.querySelector('.carousel__team'), {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        rewind: true,
-        arrows: {
-            prev: '.team-prev',
-            next: '.team-next',
-        },
-    });
+	const gliderConfig = {
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		rewind: true,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	};
+
+	document.querySelectorAll('.carousel__items').forEach((carousel) => {
+		const prevButton = carousel.parentElement.querySelector('.carousel__anterior');
+		const nextButton = carousel.parentElement.querySelector('.carousel__siguiente');
+
+		new Glider(carousel, {
+			...gliderConfig,
+			arrows: {
+				prev: prevButton,
+				next: nextButton,
+			},
+		});
+	});
 });
