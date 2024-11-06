@@ -1,9 +1,15 @@
 window.addEventListener('load', () => {
 	const gliderConfig = {
-		slidesToShow: 2,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		rewind: true,
 		responsive: [
+			{
+				breakpoint: 577,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
 			{
 				breakpoint: 769,
 				settings: {

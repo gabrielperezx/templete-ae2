@@ -76,16 +76,23 @@
 }
 
 .carousel {
+	padding-right: 2rem;
+	padding-left: 2rem;
 	&__contenedor {
 		position: relative;
+		.carousel__items {
+			.glider-slide {
+				margin: 1rem;
+			}
+		}
 	}
 	&__sombra {
-		box-shadow: 0px 4px 12px 8px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 0px 1.25rem 0px rgba(0, 0, 0, 0.15);
 		&-hover {
 			transition: ease 0.3s all;
 
 			&:hover {
-				box-shadow: 0px 4px 12px 8px rgba(0, 0, 0, 0.2);
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 			}
 		}
 	}
@@ -121,17 +128,32 @@
 		right: -3rem;
 	}
 	&__circle {
-		width: 16rem;
-		height: 16rem;
-		border: 6px solid $primary;
+		padding: 2rem;
+		border: 0.5rem solid $primary;
 		border-radius: 50rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: ease 0.3s all;
+		&:hover {
+			padding: 1rem;
+			.carousel__overlay {
+				opacity: 0.5;
+			}
+		}
 	}
-	&__img {
-		width: 14rem;
-		height: 14rem;
+	&__overlay {
+		position: absolute;
+		border-radius: 50rem;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: ease 0.5s all;
+		background-color: $primary;
 	}
 }
 
@@ -175,4 +197,27 @@
 .bg-tertiary {
 	--bs-bg-opacity: 1;
 	background-color: rgba(47, 58, 77, var(--bs-bg-opacity));
+}
+
+@media (max-width: 768px) {
+	.carousel {
+		&__anterior {
+			left: -1.5rem;
+		}
+		&__siguiente {
+			right: -1.5rem;
+		}
+		&__anterior,
+		&__siguiente {
+			opacity: 1;
+		}
+		&__sombra {
+			&-hover {
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+			}
+		}
+	}
+	.sidebar {
+		display: none;
+	}
 }
