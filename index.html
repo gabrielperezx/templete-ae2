@@ -23,39 +23,106 @@
 		<div class="background-icons">
 			<div class="bg-primary">
 				<div class="container position-relative z-1">
-					<header class="d-flex justify-content-end py-3">
-						<ul class="nav nav-pills">
-							<li class="nav-item">
-								<a href="#" class="nav-link link-light fw-bold" aria-current="page"
-									>Colegio</a
-								>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link link-light fw-bold"
-									>Plataforma educativa SAE</a
-								>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link link-light fw-bold">Publicaciones</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link link-light fw-bold">Contáctanos</a>
-							</li>
-						</ul>
-					</header>
+					<div class="py-3 py-lg-0">
+						<nav class="navbar navbar-expand-lg navbar-white-lg">
+							<div class="container-fluid">
+								<div class="navbar-brand d-lg-none align-items-center">
+									<img
+										src="src/assets/Logocolegio.png"
+										alt="Logo Colegio"
+										width="50"
+										height="50" />
+								</div>
+								<div
+									class="navbar-brand comic-neue-bold text-primary d-lg-none align-items-center">
+									U.E. Colegio Anibal Rodríguez
+								</div>
+								<button
+									class="navbar-toggler"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#navbarNavDropdown"
+									aria-controls="navbarNavDropdown"
+									aria-expanded="false"
+									aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div
+									class="collapse navbar-collapse justify-content-end"
+									id="navbarNavDropdown">
+									<ul class="navbar-nav">
+										<li class="nav-item dropdown">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false">
+												Colegio
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="#">
+														Conócenos
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">
+														Misión y Visión
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">
+														Reseña Histórica
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">
+														Organigrama
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">
+														Normativa Interna
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">
+														Servicio Educativo
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"
+												>Plataforma Educativa SAE</a
+											>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Publicaciones</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Contáctanos</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+
 					<div class="row flex-column-reverse flex-lg-row">
 						<div class="col-12 col-lg-5 text-white">
-							<div class="d-flex justify-content-center">
+							<div class="d-none d-lg-flex justify-content-center">
 								<img
 									src="src/assets/Logocolegio.png"
 									alt="Logo Colegio"
 									width="200"
 									height="200" />
 							</div>
-							<h1 class="comic-neue-bold text-center display-5">
+							<h1 class="d-none d-lg-block comic-neue-bold text-center display-5">
 								U.E. Colegio Anibal Rodríguez
 							</h1>
-							<p class="fw-semibold">
+							<p class="fw-semibold mt-3 mt-lg-0">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
 								vero ullam nam expedita voluptas iure enim distinctio, officiis,
 								aliquam facilis consectetur nobis sint! Tenetur culpa iure totam
@@ -124,7 +191,7 @@
 				</a>
 			</div>
 			<div class="container">
-				<div class="row">
+				<div class="row flex-column-reverse flex-lg-row">
 					<div class="col-12 col-lg-6">
 						<img
 							class="img-fluid"
@@ -134,11 +201,12 @@
 					<div class="col-12 col-lg-6 d-flex align-items-center">
 						<div>
 							<div class="mb-3">
-								<h2 class="comic-neue-bold text-primary display-5 m-0">
+								<h2
+									class="comic-neue-bold text-primary display-5 m-0 text-center text-lg-start">
 									Conoce Nuestro Colegio
 								</h2>
 								<hr
-									class="m-0 border border-primary border-3 opacity-100 w-15 rounded-pill" />
+									class="m-0 border border-primary border-3 opacity-100 w-15 rounded-pill mx-auto mx-lg-0" />
 							</div>
 
 							<p class="text-body-tertiary fw-semibold">
@@ -147,13 +215,15 @@
 								modi pariatur eos doloremque maiores dicta eius voluptatibus,
 								similique, labore harum?
 							</p>
-							<a
-								class="btn btn-primary px-4 fs-6 text-white fw-bold rounded-pill"
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer"
-								>Leer más</a
-							>
+							<div class="d-flex justify-content-center justify-content-lg-start">
+								<a
+									class="btn btn-primary px-4 text-white fw-bold rounded-pill"
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer"
+									>Leer más</a
+								>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -334,9 +404,9 @@
 					</button>
 				</div>
 			</div>
-			<div class="d-grid col-2 mx-auto">
+			<div class="d-flex justify-content-center">
 				<a
-					class="btn btn-primary fs-5 text-white fw-bold rounded-pill text-center"
+					class="btn btn-primary px-5 fs-5 text-white fw-bold rounded-pill"
 					href="#"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -695,9 +765,9 @@
 					</button>
 				</div>
 			</div>
-			<div class="d-grid col-2 mx-auto">
+			<div class="d-flex justify-content-center">
 				<a
-					class="btn btn-primary fs-5 text-white fw-bold rounded-pill text-center"
+					class="btn btn-primary px-5 fs-5 text-white fw-bold rounded-pill"
 					href="#"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -802,13 +872,15 @@
 					</button>
 				</div>
 			</div>
-			<a
-				class="btn btn-primary fs-5 text-white fw-bold rounded-pill"
-				href="#"
-				target="_blank"
-				rel="noopener noreferrer"
-				>Ver más</a
-			>
+			<div class="d-flex justify-content-center">
+				<a
+					class="btn btn-primary px-5 fs-5 text-white fw-bold rounded-pill"
+					href="#"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Ver más</a
+				>
+			</div>
 		</div>
 
 		<div class="background-icons">
@@ -1002,5 +1074,8 @@
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/js/all.min.js"></script>
+	<script
+		type="text/javascript"
+		src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="./src/js/app.min.js"></script>
 </html>

@@ -199,7 +199,26 @@
 	background-color: rgba(47, 58, 77, var(--bs-bg-opacity));
 }
 
+.navbar-white-lg {
+	.navbar-brand {
+		margin-right: 0;
+	}
+	.nav-link {
+		color: $white;
+		font-weight: bold;
+	}
+}
+
 @media (max-width: 768px) {
+	.navbar-white-lg {
+		--bs-bg-opacity: 1;
+		background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
+		border-radius: var(--bs-border-radius-xl);
+		.nav-link {
+			color: #9c9fa4;
+			font-weight: normal;
+		}
+	}
 	.carousel {
 		&__anterior {
 			left: -1.5rem;
