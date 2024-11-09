@@ -20,9 +20,9 @@
 		<title>Inicio</title>
 	</head>
 	<body>
-		<div class="background-icons">
-			<div class="bg-primary">
-				<div class="container position-relative z-1">
+		<div class="bg-primary">
+			<div class="bg-parallax-before" style="--bg-image: url('./../assets/Patron.png')">
+				<div class="container position-relative">
 					<div class="py-3 py-lg-0">
 						<nav class="navbar navbar-expand-lg navbar-white-lg">
 							<div class="container-fluid">
@@ -109,17 +109,15 @@
 							</div>
 						</nav>
 					</div>
-
 					<div class="row flex-column-reverse flex-lg-row">
 						<div class="col-12 col-lg-5 text-white">
-							<div class="d-none d-lg-flex justify-content-center">
+							<div class="d-none d-lg-block px-7">
 								<img
 									src="src/assets/Logocolegio.png"
 									alt="Logo Colegio"
-									width="200"
-									height="200" />
+									class="img-fluid" />
 							</div>
-							<h1 class="d-none d-lg-block comic-neue-bold text-center display-5">
+							<h1 class="d-none d-lg-block comic-neue-bold text-center display-6">
 								U.E. Colegio Anibal Rodríguez
 							</h1>
 							<p class="fw-semibold mt-3 mt-lg-0">
@@ -148,15 +146,12 @@
 						</div>
 					</div>
 				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+					<path
+						fill="#ffffff"
+						d="m0 256 48-5.3c48-5.7 144-15.7 240-53.4C384 160 480 96 576 64s192-32 288-16 192 48 288 64 192 16 240 16h48v192H0Z" />
+				</svg>
 			</div>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 -2.5 512 52"
-				xml:space="preserve"
-				fill="#fda632">
-				<path
-					d="M0-2.5v5.726c.292 0 .513.02.729-.003 5.27-.517 10.528-1.231 15.81-1.51C24.932 1.272 33.34.905 41.742.895 54 .881 66.277.372 78.511 1.637c6.645.689 13.311 1.211 19.929 2.092 5.208.691 10.354 1.832 15.533 2.75 4.078.724 8.202 1.232 12.238 2.141 14.996 3.374 29.575 8.089 43.854 13.778 6.555 2.609 13.296 4.726 19.409 8.408 4.314 2.6 9 4.475 13.78 6.129 7.99 2.769 16.065 5.226 24.36 6.848 8.434 1.648 16.948 2.72 25.577 2.57 1.855-.035 3.737.338 5.567.146 4.525-.478 9.049-1.058 13.537-1.819 4.211-.718 8.461-1.437 12.535-2.671 4.6-1.393 9.031-3.339 13.516-5.1.934-.367 1.77-.985 2.658-1.472 1.544-.84 3.074-1.713 4.646-2.488 1.688-.833 3.438-1.535 5.127-2.36a291 291 0 0 0 6.619-3.354c3.289-1.709 6.521-3.535 9.854-5.148 10.494-5.074 21.728-7.438 33.233-8.424 5.802-.496 11.668-.396 17.498-.266 8.899.199 17.744 1.117 26.515 2.68 7.006 1.246 14.018 2.474 21.014 3.779 9.082 1.695 18.109 3.744 27.242 5.095 6.014.889 12.168.915 18.267 1.126 3.62.126 7.26-.063 10.883-.245 4.547-.229 9.088-.554 13.625-.922 2.769-.226 5.533-.563 8.287-.944 2.74-.381 5.465-.879 8.186-1.32V-2.5z" />
-			</svg>
 		</div>
 
 		<div class="bg-image position-relative" style="--bg-image: url('./../assets/bg-about.png')">
@@ -965,7 +960,7 @@
 							<div class="row align-items-center">
 								<div class="col-6 col-lg-12">
 									<img
-										src="src/assets/Logocolegio.png"
+										src="./src/assets/Logocolegio.png"
 										alt="Logo Colegio"
 										class="img-fluid" />
 								</div>
