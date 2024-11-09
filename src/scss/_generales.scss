@@ -16,14 +16,22 @@
 	position: relative;
 
 	background-image: var(--bg-image);
-
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	svg {
 		display: block;
+		transform-origin: bottom;
+		animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 	}
 	&-before {
+		position: relative;
+
+		svg {
+			display: block;
+			transform-origin: bottom;
+			animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+		}
 		&::before {
 			content: '';
 			background-image: var(--bg-image);
@@ -37,6 +45,15 @@
 			left: 0;
 			opacity: 0.25;
 		}
+	}
+}
+
+@keyframes animateWave {
+	0% {
+		transform: scale(1, 0);
+	}
+	100% {
+		transform: scale(1, 1);
 	}
 }
 
