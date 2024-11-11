@@ -60,7 +60,6 @@
 .bg-image {
 	background-image: var(--bg-image);
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
 }
 
@@ -121,7 +120,7 @@
 			transition: ease 0.3s all;
 
 			&:hover {
-				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+				box-shadow: 0px 0px 1.25rem 0px rgba(0, 0, 0, 0.15);
 			}
 		}
 	}
@@ -134,7 +133,7 @@
 		justify-content: center;
 		width: 3rem;
 		height: 3rem;
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 		border: none;
 		top: 50%;
 		transform: translateY(-50%);
@@ -145,7 +144,7 @@
 		color: $primary;
 		opacity: 0.75;
 		border-radius: 50rem;
-		box-shadow: -5px 0px 20px -5px rgba(34, 34, 34, 0.302);
+		box-shadow: 0px 0px 1.25rem 0px rgba(0, 0, 0, 0.15);
 		&:hover {
 			opacity: 1;
 		}
@@ -201,6 +200,11 @@
 	}
 }
 
+.bg-recomendados {
+	--bs-bg-opacity: 1;
+	background-color: rgba(#243345, var(--bs-bg-opacity)) !important;
+}
+
 .social {
 	display: flex;
 	flex-direction: row;
@@ -210,15 +214,47 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: $primary;
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 2rem;
+		height: 2rem;
 		color: $white;
 		border-radius: 50rem;
-		font-size: 1.25rem;
+		font-size: 1rem;
 		transition: ease all 1s;
-		&:hover {
-			background-color: #fdb351;
+		&-primary {
+			background-color: $primary;
+			&:hover {
+				background-color: #fdb351;
+			}
+		}
+		&-facebook {
+			background-color: #4b68ba;
+			&:hover {
+				background-color: #6f87c8;
+			}
+		}
+		&-twitter {
+			background-color: #00abef;
+			&:hover {
+				background-color: #0087bd;
+			}
+		}
+		&-whatsapp {
+			background-color: #55af00;
+			&:hover {
+				background-color: #6ce000;
+			}
+		}
+		&-envelope {
+			background-color: #999999;
+			&:hover {
+				background-color: #aaaaaa;
+			}
+		}
+		&-print {
+			background-color: #bbbbbb;
+			&:hover {
+				background-color: #aaaaaa;
+			}
 		}
 	}
 }
@@ -261,11 +297,15 @@
 		}
 		&__sombra {
 			&-hover {
-				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+				box-shadow: 0px 0px 1.25rem 0px rgba(0, 0, 0, 0.15);
 			}
 		}
 	}
 	.sidebar {
 		display: none;
+	}
+
+	.bg-image {
+		background-image: var(--bg-image-v);
 	}
 }
