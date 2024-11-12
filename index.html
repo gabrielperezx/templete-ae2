@@ -508,7 +508,26 @@
 			</div>
 			<div class="row py-5">
 				<div class="col-12 col-lg-4 mb-4 mb-lg-0">
-					<div class="card rounded-4 carousel__sombra h-100">
+					<div class="calendar">
+						<div class="calendar__nav">
+							<button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+							<div class="calendar__titulo" id="monthYear"></div>
+							<button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+						</div>
+						<div class="calendar__days">
+							<div class="calendar__day">Dom</div>
+							<div class="calendar__day">Lun</div>
+							<div class="calendar__day">Mar</div>
+							<div class="calendar__day">Mie</div>
+							<div class="calendar__day">Jue</div>
+							<div class="calendar__day">Vie</div>
+							<div class="calendar__day">Sab</div>
+						</div>
+						<div class="calendar__dates" id="dates"></div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 mb-4 mb-lg-0">
+					<div class="card rounded-4 carousel__sombra">
 						<img src="/src/assets/Imagen1.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title text-primary fw-semibold">Titulo 1</h5>
@@ -542,7 +561,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-8">
+				<div class="col-12 col-lg-4">
 					<div class="row g-2">
 						<div class="card p-0">
 							<div class="row g-0">
@@ -592,49 +611,6 @@
 								<div class="col-4">
 									<img
 										src="/src/assets/Imagen1.jpg"
-										class="img-fluid-container rounded-start"
-										alt="..." />
-								</div>
-								<div class="col-8">
-									<div class="card-body">
-										<h5 class="card-title text-primary fw-semibold">
-											Titulo 1
-										</h5>
-										<p class="card-text">
-											This is a wider card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</p>
-									</div>
-									<div class="card-footer">
-										<div
-											class="d-flex justify-content-between fw-bold text-body-tertiary"
-											style="font-size: 0.75rem">
-											<div class="d-flex gap-3 align-items-center">
-												<span>
-													<i class="fa-regular fa-clock"></i>
-													8:00 am
-												</span>
-												<span>
-													<i class="fa-solid fa-calendar-days"></i>
-													03.12.2015
-												</span>
-											</div>
-											<a
-												href="#"
-												class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-												>Leer más</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card p-0">
-							<div class="row g-0">
-								<div class="col-4">
-									<img
-										src="./src/assets/Imagen1.jpg"
 										class="img-fluid-container rounded-start"
 										alt="..." />
 								</div>
