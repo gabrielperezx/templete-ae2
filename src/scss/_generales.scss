@@ -151,9 +151,15 @@
 	}
 	&__anterior {
 		left: -3rem;
+		&.btn-anterior {
+			left: -4rem;
+		}
 	}
 	&__siguiente {
 		right: -3rem;
+		&.btn-siguiente {
+			right: -4rem;
+		}
 	}
 	&__circle {
 		padding: 2rem;
@@ -352,6 +358,16 @@
 	}
 }
 
+.gallery {
+	img {
+		cursor: pointer;
+		transition: all 0.3s ease;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.navbar-white-lg {
 		--bs-bg-opacity: 1;
@@ -365,9 +381,15 @@
 	.carousel {
 		&__anterior {
 			left: -1.5rem;
+			&.btn-anterior {
+				left: 0;
+			}
 		}
 		&__siguiente {
 			right: -1.5rem;
+			&.btn-siguiente {
+				right: 0;
+			}
 		}
 		&__anterior,
 		&__siguiente {
