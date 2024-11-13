@@ -65,7 +65,52 @@
 		}
 	}
 
-	function Glider() {
+	function LightBox() {
+		const checkGaleria = document.querySelector('.gallery');
+		if (document.body.contains(checkGaleria)) {
+			// JavaScript para manejar la navegación en el Lightbox
+			const images = document.querySelectorAll('.gallery img');
+			const lightboxImage = document.getElementById('lightboxImage');
+			let currentIndex = 0;
+
+			// Función para actualizar la imagen del lightbox
+			function updateLightboxImage(index) {
+				lightboxImage.src = images[index].src;
+				currentIndex = index;
+			}
+
+			// Abre el modal y muestra la imagen seleccionada
+			images.forEach((image, index) => {
+				image.addEventListener('click', () => {
+					updateLightboxImage(index);
+				});
+			});
+
+			// Navegación hacia la derecha
+			document.getElementById('nextBtn').addEventListener('click', () => {
+				if (currentIndex < images.length - 1) {
+					updateLightboxImage(currentIndex + 1);
+				} else {
+					updateLightboxImage(0); // Vuelve al inicio si está en la última imagen
+				}
+			});
+
+			// Navegación hacia la izquierda
+			document.getElementById('prevBtn').addEventListener('click', () => {
+				if (currentIndex > 0) {
+					updateLightboxImage(currentIndex - 1);
+				} else {
+					updateLightboxImage(images.length - 1); // Vuelve a la última imagen si está en la primera
+				}
+			});
+		}
+	}
+
+	/*----- ----- ----- ----- -----
+	# Declaraciones
+	----- ----- ----- ----- -----*/
+
+	window.addEventListener('load', () => {
 		const gliderConfig = {
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -99,53 +144,8 @@
 				},
 			});
 		});
-	}
 
-	function LightBox() {
-		// JavaScript para manejar la navegación en el Lightbox
-		const images = document.querySelectorAll('.gallery img');
-		const lightboxImage = document.getElementById('lightboxImage');
-		let currentIndex = 0;
-
-		// Función para actualizar la imagen del lightbox
-		function updateLightboxImage(index) {
-			lightboxImage.src = images[index].src;
-			currentIndex = index;
-		}
-
-		// Abre el modal y muestra la imagen seleccionada
-		images.forEach((image, index) => {
-			image.addEventListener('click', () => {
-				updateLightboxImage(index);
-			});
-		});
-
-		// Navegación hacia la derecha
-		document.getElementById('nextBtn').addEventListener('click', () => {
-			if (currentIndex < images.length - 1) {
-				updateLightboxImage(currentIndex + 1);
-			} else {
-				updateLightboxImage(0); // Vuelve al inicio si está en la última imagen
-			}
-		});
-
-		// Navegación hacia la izquierda
-		document.getElementById('prevBtn').addEventListener('click', () => {
-			if (currentIndex > 0) {
-				updateLightboxImage(currentIndex - 1);
-			} else {
-				updateLightboxImage(images.length - 1); // Vuelve a la última imagen si está en la primera
-			}
-		});
-	}
-
-	/*----- ----- ----- ----- -----
-	# Declaraciones
-	----- ----- ----- ----- -----*/
-
-	window.addEventListener('load', () => {
 		Calendario();
-		Glider();
 		LightBox();
 	});
 })();
