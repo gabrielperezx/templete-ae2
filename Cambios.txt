@@ -1,0 +1,26 @@
+Revisión Plantilla #2 AE:
+🔵 Home:
+- Hero: Agregar carrusel de imágenes con ell diseño blop. 4 imágenes, que sea por tabs.
+- Información de interés: Al dar clic, que abra un pop up.
+
+🔵 Eventos:
+- Calendario programar eventos marcados. 
+- Colocar línea separatoria y los eventos relacionados a ese día.
+
+🔵 Galería:
+- Configurar que sea por álbumes.
+
+🔵 Personal Individual: 
+- Colocar redes sociales.
+- Hero que este a la mitad y el titulo de la pagina "Conoce a nuestro equipo"
+
+🔵 Publicaciones:
+- El contenido del desplegable debe ser enlaces.
+
+🔵 Contáctanos:
+- Hacer página individual de contáctanos.
+
+🔵 Observaciones generales:
+- Subpáginas deben tener de 9 elementos en la paginación.
+- Corregir paginación, diseño debe estar redondeado.
+- Clonar modificaciones del home a las subpáginas.

@@ -3,7 +3,7 @@
 	# Funciones
 	----- ----- ----- ----- -----*/
 
-    function Calendario() {
+    const Calendario = () => {
         const checkCalendario = document.querySelector('.calendar');
         if (document.body.contains(checkCalendario)) {
             const monthYearElement = document.getElementById('monthYear'),
@@ -69,9 +69,9 @@
 
             updateCalendar();
         }
-    }
+    };
 
-    function LightBox() {
+    const LightBox = () => {
         const checkGaleria = document.querySelector('.gallery');
         if (document.body.contains(checkGaleria)) {
             // JavaScript para manejar la navegación en el Lightbox
@@ -80,10 +80,10 @@
             let currentIndex = 0;
 
             // Función para actualizar la imagen del lightbox
-            function updateLightboxImage(index) {
+            const updateLightboxImage = (index) => {
                 lightboxImage.src = images[index].src;
                 currentIndex = index;
-            }
+            };
 
             // Abre el modal y muestra la imagen seleccionada
             images.forEach((image, index) => {
@@ -110,9 +110,9 @@
                 }
             });
         }
-    }
+    };
 
-    function AlertaBienvenido() {
+    const AlertaBienvenido = () => {
         const checkInicio = document.getElementById('VentanaInicio');
         if (document.body.contains(checkInicio)) {
             Swal.fire({
@@ -130,7 +130,7 @@
                 },
             });
         }
-    }
+    };
 
     const MenuEstatico = () => {
         document.addEventListener('DOMContentLoaded', () => {
@@ -171,11 +171,7 @@
         }
     };
 
-    /*----- ----- ----- ----- -----
-	# Declaraciones
-	----- ----- ----- ----- -----*/
-
-    window.addEventListener('load', () => {
+    const GliderCreator = () => {
         const gliderConfig = {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -213,15 +209,40 @@
                 },
             });
         });
+    };
 
+    const CarouselSVG = () => {
+        const images = document.querySelectorAll('.carousel-svg__images img');
+        const dots = document.querySelectorAll('.carousel-svg__dots button');
+        let currentIndex = 0;
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+
+        function updateCarousel() {
+            images.forEach((img, index) => {
+                img.classList.toggle('active', index === currentIndex);
+            });
+            dots.forEach((dot) => dot.classList.remove('active'));
+            dots[currentIndex].classList.add('active');
+        }
+    };
+
+    /*----- ----- ----- ----- -----
+	# Declaraciones
+	----- ----- ----- ----- -----*/
+
+    window.addEventListener('load', () => {
+        GliderCreator();
         Calendario();
         LightBox();
-        AlertaBienvenido();
+        // AlertaBienvenido();
         BotonScrollTop();
+        CarouselSVG();
     });
     MenuEstatico();
 })();
-
-// const checkClass = document.querySelector('.class');
-// if (document.body.contains(checkClass)) {
-// }
