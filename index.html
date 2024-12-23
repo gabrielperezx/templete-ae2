@@ -29,12 +29,14 @@
                 >
                     <div class="container-fluid">
                         <div class="navbar-brand align-items-center">
-                            <img
-                                src="./src/assets/Logocolegio.png"
-                                alt="Logo Colegio"
-                                width="40"
-                                height="40"
-                            />
+                            <a href="#">
+                                <img
+                                    src="./src/assets/Logocolegio.png"
+                                    alt="Logo Colegio"
+                                    width="40"
+                                    height="40"
+                                />
+                            </a>
                         </div>
                         <div
                             class="navbar-brand comic-neue-bold text-primary d-lg-none align-items-center"
@@ -69,7 +71,10 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="#">
+                                            <a
+                                                class="dropdown-item"
+                                                href="./src/pages/conocenos.html"
+                                            >
                                                 Conócenos
                                             </a>
                                         </li>
@@ -167,7 +172,9 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contáctanos</a>
+                                    <a class="nav-link" href="#SectionContacto"
+                                        >Contáctanos</a
+                                    >
                                 </li>
                             </ul>
                         </div>
@@ -472,7 +479,7 @@
                         >
                             <a
                                 class="btn btn-primary px-4 text-white fw-bold rounded-pill"
-                                href="./src/pages/contenido.html"
+                                href="./src/pages/conocenos.html"
                                 >Leer más</a
                             >
                         </div>
@@ -516,7 +523,7 @@
                                         card's content.
                                     </p>
                                     <a
-                                        href="./src/pages/articulos.html"
+                                        href="./src/pages/articulos-individual.html"
                                         class="btn btn-sm btn-primary text-white fw-semibold rounded-pill"
                                         >Leer más</a
                                     >
@@ -553,7 +560,7 @@
                                         card's content.
                                     </p>
                                     <a
-                                        href="./src/pages/articulos.html"
+                                        href="./src/pages/articulos-individual.html"
                                         class="btn btn-sm btn-primary text-white fw-semibold rounded-pill"
                                         >Leer más</a
                                     >
@@ -590,7 +597,7 @@
                                         card's content.
                                     </p>
                                     <a
-                                        href="./src/pages/articulos.html"
+                                        href="./src/pages/articulos-individual.html"
                                         class="btn btn-sm btn-primary text-white fw-semibold rounded-pill"
                                         >Leer más</a
                                     >
@@ -627,7 +634,7 @@
                                         card's content.
                                     </p>
                                     <a
-                                        href="./src/pages/articulos.html"
+                                        href="./src/pages/articulos-individual.html"
                                         class="btn btn-sm btn-primary text-white fw-semibold rounded-pill"
                                         >Leer más</a
                                     >
@@ -664,7 +671,7 @@
                                         card's content.
                                     </p>
                                     <a
-                                        href="./src/pages/articulos.html"
+                                        href="./src/pages/articulos-individual.html"
                                         class="btn btn-sm btn-primary text-white fw-semibold rounded-pill"
                                         >Leer más</a
                                     >
@@ -715,7 +722,7 @@
                     <div class="carousel__items">
                         <div>
                             <div
-                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover"
+                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover position-relative"
                             >
                                 <i
                                     class="fa-solid fa-church display-6 text-primary mb-3"
@@ -723,89 +730,67 @@
                                 <h5 class="text-primary fw-semibold mb-3">
                                     Pastoral Educativa
                                 </h5>
-                                <a
-                                    class="btn btn-primary text-white fw-bold rounded-pill w-100"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Ir</a
+
+                                <button
+                                    class="btn btn-primary text-white fw-bold rounded-pill w-100 stretched-link"
+                                    id="btnPastoral"
                                 >
+                                    Ir
+                                </button>
                             </div>
                         </div>
                         <div>
                             <div
-                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover"
+                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover position-relative"
                             >
                                 <i
-                                    class="fa-solid fa-church display-6 text-primary mb-3"
+                                    class="fa-solid fa-building-columns display-6 text-primary mb-3"
                                 ></i>
                                 <h5 class="text-primary fw-semibold mb-3">
-                                    Pastoral Educativa
+                                    Bancos
                                 </h5>
-                                <a
-                                    class="btn btn-primary text-white fw-bold rounded-pill w-100"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Ir</a
+                                <button
+                                    class="btn btn-primary text-white fw-bold rounded-pill w-100 stretched-link"
+                                    id="btnBancos"
                                 >
+                                    Ir
+                                </button>
                             </div>
                         </div>
                         <div>
                             <div
-                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover"
+                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover position-relative"
                             >
                                 <i
-                                    class="fa-solid fa-church display-6 text-primary mb-3"
+                                    class="fa-solid fa-users display-6 text-primary mb-3"
                                 ></i>
                                 <h5 class="text-primary fw-semibold mb-3">
-                                    Pastoral Educativa
+                                    Clubes escolares
                                 </h5>
-                                <a
-                                    class="btn btn-primary text-white fw-bold rounded-pill w-100"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Ir</a
+                                <button
+                                    class="btn btn-primary text-white fw-bold rounded-pill w-100 stretched-link"
+                                    id="btnClubes"
                                 >
+                                    Ir
+                                </button>
                             </div>
                         </div>
                         <div>
                             <div
-                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover"
+                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover position-relative"
                             >
                                 <i
-                                    class="fa-solid fa-church display-6 text-primary mb-3"
+                                    class="fa-solid fa-school display-6 text-primary mb-3"
                                 ></i>
                                 <h5 class="text-primary fw-semibold mb-3">
-                                    Pastoral Educativa
+                                    Colegio
                                 </h5>
-                                <a
-                                    class="btn btn-primary text-white fw-bold rounded-pill w-100"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Ir</a
+                                <button
+                                    class="btn btn-primary text-white fw-bold rounded-pill w-100 stretched-link"
+                                    id="btnColegio"
                                 >
-                            </div>
-                        </div>
-                        <div>
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center rounded-4 p-5 carousel__sombra-hover"
-                            >
-                                <i
-                                    class="fa-solid fa-church display-6 text-primary mb-3"
-                                ></i>
-                                <h5 class="text-primary fw-semibold mb-3">
-                                    Pastoral Educativa
-                                </h5>
-                                <a
-                                    class="btn btn-primary text-white fw-bold rounded-pill w-100"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Ir</a
-                                >
+                                    Ir
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -854,6 +839,8 @@
                         </div>
                         <div class="calendar__dates" id="dates"></div>
                     </div>
+                    <hr class="calendar__separator" />
+                    <div class="calendar__events" id="eventsContainer"></div>
                 </div>
 
                 <div class="col-12 col-lg-7">
@@ -1315,7 +1302,7 @@
             </div>
         </div>
 
-        <div class="bg-primary">
+        <div id="SectionContacto" class="bg-primary">
             <div
                 class="bg-parallax-before"
                 style="--bg-image: url('./../assets/Patron.png')"
@@ -1633,9 +1620,6 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.2/dist/sweetalert2.all.min.js"></script>
-    <script
-        type="text/javascript"
-        src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    ></script>
+    <script type="text/javascript" src="./src/js/bootstrap.bundle.min"></script>
     <script type="text/javascript" src="./src/js/app.min.js"></script>
 </html>
