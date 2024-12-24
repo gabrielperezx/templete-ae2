@@ -3,6 +3,26 @@
 	# Funciones
 	----- ----- ----- ----- -----*/
 
+    const AlertaBienvenido = () => {
+        const checkInicio = document.getElementById('VentanaInicio');
+        if (document.body.contains(checkInicio)) {
+            Swal.fire({
+                title: '¡Bienvenidos!',
+                text: 'Waos',
+                showCloseButton: true,
+                confirmButtonText: 'Aceptar',
+                confirmButtonAriaLabel: 'Boton aceptar',
+                customClass: {
+                    title: 'text-start h5 fw-bold',
+                    confirmButton:
+                        'btn btn-primary text-white fw-bold rounded-pill px-4 fs-7',
+                    actions: 'w-100 justify-content-end px-4',
+                    popup: 'rounded-4',
+                },
+            });
+        }
+    };
+
     const Calendario = () => {
         const checkCalendario = document.querySelector('.calendar');
         if (document.body.contains(checkCalendario)) {
@@ -89,6 +109,14 @@
                 });
             };
 
+            const formatDate = (dateString) => {
+                const date = new Date(dateString);
+                const day = String(date.getDate() + 1);
+                const month = String(date.getMonth() + 1); // Los meses comienzan desde 0
+                const year = String(date.getFullYear()); // Año completo (YYYY)
+                return `${day}/${month}/${year}`;
+            };
+
             const showEvents = (date) => {
                 const filteredEvents = events.filter(
                     (event) => event.date === date,
@@ -102,9 +130,13 @@
                     filteredEvents.forEach((event) => {
                         eventsContainer.innerHTML += `
                         <div class="calendar__event">
-                            <p class="calendar__event-title">${event.date}</p>
+                            <p class="calendar__event-title">${formatDate(
+                                event.date,
+                            )}</p>
                             <p class="calendar__event-title">${event.title}</p>
-                            <p class="calendar__event-description">${event.description}</p>
+                            <p class="calendar__event-description">${
+                                event.description
+                            }</p>
                         </div>`;
                     });
                 }
@@ -165,37 +197,14 @@
         }
     };
 
-    const AlertaBienvenido = () => {
-        const checkInicio = document.getElementById('VentanaInicio');
-        if (document.body.contains(checkInicio)) {
-            Swal.fire({
-                title: '¡Bienvenidos!',
-                text: 'Waos',
-                showCloseButton: true,
-                confirmButtonText: 'Aceptar',
-                confirmButtonAriaLabel: 'Boton aceptar',
-                customClass: {
-                    title: 'text-start h5 fw-bold',
-                    confirmButton:
-                        'btn btn-primary text-white fw-bold rounded-pill px-4 fs-7',
-                    actions: 'w-100 justify-content-end px-4',
-                    popup: 'rounded-4',
-                },
-            });
-        }
-    };
-
     const MenuEstatico = () => {
         const navbar = document.getElementById('mainNavbar');
         if (document.body.contains(navbar)) {
-            const offsetTop = navbar.offsetTop; // Obtiene la posición inicial de la barra
             window.addEventListener('scroll', () => {
-                if (window.scrollY > offsetTop) {
-                    navbar.classList.remove('d-none');
-                    navbar.classList.add('navbar-fixed');
+                if (window.scrollY > 100) {
+                    navbar.classList.remove('visually-hidden');
                 } else {
-                    navbar.classList.remove('navbar-fixed');
-                    navbar.classList.add('d-none');
+                    navbar.classList.add('visually-hidden');
                 }
             });
         }
@@ -229,13 +238,6 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [
-                {
-                    breakpoint: 577,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    },
-                },
                 {
                     breakpoint: 769,
                     settings: {

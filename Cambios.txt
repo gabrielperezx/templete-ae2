@@ -1,7 +1,0 @@
-🔵 Contáctanos:
-- Hacer página individual de contáctanos.
-
-🔵 Observaciones generales:
-- Subpáginas deben tener de 9 elementos en la paginación.
-- Corregir paginación, diseño debe estar redondeado.
-- Clonar modificaciones del home a las subpáginas.
