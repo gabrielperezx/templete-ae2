@@ -17,8 +17,6 @@
 .bg-parallax {
     --bg-image: url('./../assets/Imagen1.jpg');
 
-    position: relative;
-
     background-image: var(--bg-image);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -338,9 +336,6 @@
 }
 
 .navbar-white-lg {
-    .navbar-brand {
-        margin-right: 0;
-    }
     .nav-link {
         color: $white;
         font-weight: bold;
@@ -615,5 +610,23 @@
 
     .bg-image {
         background-image: var(--bg-image-v);
+    }
+
+    .carousel-svg {
+        &__images {
+            width: 100%;
+            height: 0;
+            padding-bottom: 80%; /* This creates a responsive square */
+        }
+        &__dots {
+            button {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .carousel {
+        padding: 0 2rem;
     }
 }

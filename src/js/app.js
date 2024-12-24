@@ -186,19 +186,19 @@
     };
 
     const MenuEstatico = () => {
-        document.addEventListener('DOMContentLoaded', () => {
-            const navbar = document.getElementById('mainNavbar');
+        const navbar = document.getElementById('mainNavbar');
+        if (document.body.contains(navbar)) {
             const offsetTop = navbar.offsetTop; // Obtiene la posición inicial de la barra
             window.addEventListener('scroll', () => {
                 if (window.scrollY > offsetTop) {
-                    navbar.classList.add('navbar-fixed');
                     navbar.classList.remove('d-none');
+                    navbar.classList.add('navbar-fixed');
                 } else {
                     navbar.classList.remove('navbar-fixed');
                     navbar.classList.add('d-none');
                 }
             });
-        });
+        }
     };
 
     const BotonScrollTop = () => {
@@ -369,13 +369,13 @@
 	----- ----- ----- ----- -----*/
 
     window.addEventListener('load', () => {
+        // AlertaBienvenido();
         GliderCreator();
         Calendario();
         LightBox();
-        // AlertaBienvenido();
         BotonScrollTop();
         CarouselSVG();
+        MenuEstatico();
         PopUpInfo();
     });
-    MenuEstatico();
 })();

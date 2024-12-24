@@ -22,29 +22,28 @@
         <title>Inicio</title>
     </head>
     <body id="VentanaInicio">
-        <div id="mainNavbar" class="py-2 d-none">
-            <div class="container">
+        <div id="mainNavbar" class="d-none">
+            <div class="container py-2">
                 <nav
                     class="navbar navbar-expand-lg bg-white rounded-4 shadow-sm"
                 >
                     <div class="container-fluid">
-                        <div class="navbar-brand align-items-center">
-                            <a href="#">
-                                <img
-                                    src="./src/assets/Logocolegio.png"
-                                    alt="Logo Colegio"
-                                    width="40"
-                                    height="40"
-                                />
-                            </a>
-                        </div>
-                        <div
-                            class="navbar-brand comic-neue-bold text-primary d-lg-none align-items-center"
-                        >
-                            U.E. Colegio Anibal Rodríguez
-                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img
+                                src="./src/assets/Logocolegio.png"
+                                alt="Logo Colegio"
+                                width="40"
+                                height="40"
+                                class="me-2"
+                            />
+                            <span
+                                class="comic-neue-bold text-primary d-lg-none"
+                            >
+                                U.E. Colegio Anibal Rodríguez
+                            </span>
+                        </a>
                         <button
-                            class="navbar-toggler"
+                            class="navbar-toggler mx-auto mx-md-0"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown"
@@ -172,7 +171,9 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#SectionContacto"
+                                    <a
+                                        class="nav-link"
+                                        href="./src/pages/contacto.html"
                                         >Contáctanos</a
                                     >
                                 </li>
@@ -192,23 +193,21 @@
                     <div class="py-3 py-lg-0">
                         <nav class="navbar navbar-expand-lg navbar-white-lg">
                             <div class="container-fluid">
-                                <div
-                                    class="navbar-brand d-lg-none align-items-center"
-                                >
+                                <a class="navbar-brand d-lg-none" href="#">
                                     <img
                                         src="./src/assets/Logocolegio.png"
                                         alt="Logo Colegio"
-                                        width="50"
-                                        height="50"
+                                        width="40"
+                                        height="40"
+                                        class="me-2"
                                     />
-                                </div>
-                                <div
-                                    class="navbar-brand comic-neue-bold text-primary d-lg-none align-items-center"
-                                >
-                                    U.E. Colegio Anibal Rodríguez
-                                </div>
+                                    <span class="comic-neue-bold text-primary">
+                                        U.E. Colegio Anibal Rodríguez
+                                    </span>
+                                </a>
+
                                 <button
-                                    class="navbar-toggler"
+                                    class="navbar-toggler mx-auto mx-md-0"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarNavDropdown"
@@ -369,7 +368,9 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"
+                                            <a
+                                                class="nav-link"
+                                                href="./src/pages/contacto.html"
                                                 >Contáctanos</a
                                             >
                                         </li>
@@ -446,8 +447,8 @@
         </div>
 
         <div class="container mb-5">
-            <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-12 col-lg-6 px-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 px-lg-5">
                     <img
                         class="img-fluid img-thumbnail"
                         src="./src/assets/Imagen1.jpg"
@@ -816,8 +817,8 @@
                     class="border border-primary border-3 opacity-100 w-15 rounded-pill m-0 mx-auto"
                 />
             </div>
-            <div class="row px-6 mb-4">
-                <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+            <div class="row px-lg-6 mb-4">
+                <div class="col-12 col-lg-5 mb-4 mb-lg-0 d-none d-md-block">
                     <div class="calendar">
                         <div class="calendar__nav">
                             <button id="prevBtn">
@@ -1040,6 +1041,7 @@
                                 class="carousel__sombra-hover rounded-4 bg-image overflow-hidden"
                                 style="
                                     --bg-image: url('./../assets/Imagen1.jpg');
+                                    --bg-image-v: url('./../assets/Imagen1.jpg');
                                 "
                             >
                                 <div
@@ -1059,6 +1061,7 @@
                                 class="carousel__sombra-hover rounded-4 bg-image overflow-hidden"
                                 style="
                                     --bg-image: url('./../assets/Imagen1.jpg');
+                                    --bg-image-v: url('./../assets/Imagen1.jpg');
                                 "
                             >
                                 <div
@@ -1078,6 +1081,7 @@
                                 class="carousel__sombra-hover rounded-4 bg-image overflow-hidden"
                                 style="
                                     --bg-image: url('./../assets/Imagen1.jpg');
+                                    --bg-image-v: url('./../assets/Imagen1.jpg');
                                 "
                             >
                                 <div
@@ -1097,6 +1101,7 @@
                                 class="carousel__sombra-hover rounded-4 bg-image overflow-hidden"
                                 style="
                                     --bg-image: url('./../assets/Imagen1.jpg');
+                                    --bg-image-v: url('./../assets/Imagen1.jpg');
                                 "
                             >
                                 <div
@@ -1116,6 +1121,7 @@
                                 class="carousel__sombra-hover rounded-4 bg-image overflow-hidden"
                                 style="
                                     --bg-image: url('./../assets/Imagen1.jpg');
+                                    --bg-image-v: url('./../assets/Imagen1.jpg');
                                 "
                             >
                                 <div
@@ -1400,7 +1406,7 @@
                 <div class="row">
                     <div class="col-6 col-lg-3">
                         <div class="row align-items-center g-3">
-                            <div class="col-6 col-lg-12 px-6">
+                            <div class="col-6 col-lg-12 px-lg-5">
                                 <img
                                     src="./src/assets/Logocolegio.png"
                                     alt="Logo Colegio"
