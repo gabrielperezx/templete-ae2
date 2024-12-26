@@ -181,7 +181,8 @@
         }
     }
     &__circle {
-        padding: 2rem;
+        padding: 1.5rem;
+        margin: 2rem;
         border: 0.5rem solid $primary;
         border-radius: 50rem;
         display: flex;
@@ -399,6 +400,7 @@
         width: 40px;
         height: 40px;
         transition: 0.2s ease all;
+        font-size: 14px;
         &:hover,
         &.active {
             background-color: $primary;
@@ -419,7 +421,6 @@
     &__titulo {
         text-align: center;
         font-weight: 600;
-        text-transform: capitalize;
     }
     &__separator {
         margin: 1rem 0;
@@ -433,15 +434,22 @@
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
     }
 
     &__event {
         margin-bottom: 10px;
     }
 
+    &__event-date {
+        margin: 0;
+        font-weight: bold;
+    }
+
     &__event-title {
         margin: 0;
         font-weight: bold;
+        color: $primary;
     }
 
     &__event-description {

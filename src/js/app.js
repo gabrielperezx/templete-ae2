@@ -130,7 +130,7 @@
                     filteredEvents.forEach((event) => {
                         eventsContainer.innerHTML += `
                         <div class="calendar__event">
-                            <p class="calendar__event-title">${formatDate(
+                            <p class="calendar__event-date">${formatDate(
                                 event.date,
                             )}</p>
                             <p class="calendar__event-title">${event.title}</p>

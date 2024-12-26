@@ -24,7 +24,7 @@
     <body>
         <div class="container py-3 fixed-top top-0">
             <nav
-                class="navbar navbar-expand-lg bg-white rounded-4 navbar-link-primary"
+                class="navbar navbar-expand-lg bg-white rounded-4 shadow-sm navbar-link-primary"
             >
                 <div class="container-fluid">
                     <a class="navbar-brand me-0" href="../../index.html">
@@ -42,7 +42,7 @@
                         </span>
                     </a>
                     <button
-                        class="navbar-toggler mx-auto"
+                        class="navbar-toggler mx-auto mx-md-0"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown"
@@ -168,7 +168,9 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contáctanos</a>
+                                <a class="nav-link" href="./contacto.html"
+                                    >Contáctanos</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -193,13 +195,7 @@
 
         <div class="container mb-5">
             <div class="row g-4">
-                <div class="col-12 col-lg-7">
-                    <h2 class="comic-neue-bold text-center text-primary">
-                        Lorem ipsum dolor sit
-                    </h2>
-                    <hr
-                        class="mt-0 border border-3 rounded-pill border-primary opacity-100 w-15 mx-auto"
-                    />
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
                     <form class="row g-3">
                         <div class="col-12 col-md-6">
                             <label for="inputNombre" class="form-label"
@@ -233,7 +229,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <label for="inputTelefono" class="form-label"
-                                >Telefono</label
+                                >Teléfono</label
                             >
                             <input
                                 type="tel"
@@ -251,23 +247,18 @@
                                 rows="4"
                             ></textarea>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 d-flex justify-content-end">
                             <button
                                 type="submit"
                                 class="btn btn-primary text-white"
+                                style="--bs-btn-padding-x: 3rem"
                             >
                                 Enviar
                             </button>
                         </div>
                     </form>
                 </div>
-                <div class="col-12 col-lg-5">
-                    <h2 class="comic-neue-bold text-center text-primary">
-                        Lorem ipsum dolor sit.
-                    </h2>
-                    <hr
-                        class="mt-0 border border-3 rounded-pill border-primary opacity-100 w-15 mx-auto"
-                    />
+                <div class="col-12 col-lg-5 order-1 order-lg-2">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Omnis dolores accusantium repellendus, quisquam
@@ -302,7 +293,10 @@
                         </li>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 order-3">
+                    <h2 class="text-center text-primary fw-bold mb-3">
+                        Ubícanos
+                    </h2>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60717.3267937924!2d-67.1874136783203!3d-17.9865085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e2b0c2e1310c7f%3A0x6c0d337032fbb904!2sColegio%20SkibidiMewing!5e0!3m2!1ses!2sve!4v1735065829510!5m2!1ses!2sve"
                         class="w-100"
@@ -320,23 +314,21 @@
             <div class="container py-3">
                 <div class="row">
                     <div class="col-6 col-lg-3">
-                        <div class="row align-items-center g-3">
-                            <div class="col-6 col-lg-12 px-lg-5">
+                        <div class="row align-items-center g-2">
+                            <div class="col-12 pe-6">
                                 <img
                                     src="../assets/Logocolegio.png"
                                     alt="Logo Colegio"
                                     class="img-fluid"
                                 />
                             </div>
-                            <div class="col-6 col-lg-12">
+                            <div class="col-12">
                                 <h5
-                                    class="comic-neue-bold fs-6 text-primary text-center m-0"
+                                    class="comic-neue-bold fs-6 text-primary m-0"
                                 >
                                     U.E. Colegio Anibal Rodríguez
                                 </h5>
-                                <h6
-                                    class="comic-neue-bold fs-6 text-primary text-center m-0"
-                                >
+                                <h6 class="comic-neue-bold fs-6 text-primary">
                                     Barquisimeto - Lara
                                 </h6>
                             </div>
@@ -482,7 +474,7 @@
             </div>
             <div class="bg-tertiary">
                 <div class="container py-3">
-                    <p class="fs-7 m-0 text-center text-white">
+                    <p class="mx-5 fs-8 m-0 text-center text-white">
                         Copyright ©2024 Todos los derechos reservados, diseñado
                         por
                         <a
